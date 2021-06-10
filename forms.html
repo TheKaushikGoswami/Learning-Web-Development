@@ -10,11 +10,13 @@
     <h2>This is HTML Forms :D </h2>
     <!-- forms from here -->
     <form action="backend.php">
-        Name: <input type="text" name="myName">
+        <label for="name">Name: </label>
+            <input type="text" name="myName" id="name">
         <br>
         <!-- 1 way to send in next line = br -->
         <br>
-        Roll: <input type="text" name="myRoll">
+        <label for="roll">Roll: </label>
+            <input type="text" name="myRoll" id="roll">
         <br>
 
 
@@ -22,13 +24,15 @@
         <br>
 
         <div>
-            Email: <input type="email" name="myEmail">
+        <label for="email">Email: </label>
+            <input type="email" name="myEmail" id="email">
         </div>
 
         <br>
 
         <div>
-            Class: <input type="text" name="myClass">
+        <label for="class">Class: </label>
+            <input type="text" name="myClass" id="class">
         </div>
 
         <br>
@@ -56,8 +60,20 @@
         </div>
 
         <br>
+        <div>
+        <label for="study">Study Center: </label>
+        <select name="myStudy" id="study">
+            <option value="Select From Here" selected> Select From Here</option>
+            <option value="SSP">SSP</option>
+            <option value="IIT Mumbai"> IIT Mumbai</option>
+            <option value="IIT Madras">IIT Madras</option>
+        </select>
+        </div>
+
+        <br>
 
         <input type="submit" value="Submit Here!">
+        <input type="reset" name="Reset Form!">
 
     </form>
 </body>
