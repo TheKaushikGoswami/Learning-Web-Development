@@ -1,0 +1,58 @@
+<!-- Day 12 - Selectors in CSS and their Types -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        p{
+            color: red; /* element css selector */
+        }
+
+        #grayParagraph{
+            color: gray; /* ID css selector */
+        }
+
+        .brownParagraph{
+            color: brown; /* class css selector */
+        }
+
+        .bgColor{
+            background-color: cyan;
+        }
+
+        p2, span, footer{
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Element CSS Selectors</h3>
+        <p>This is a normal paragraph with CSS Selectors</p>
+        <p>This is also the same group of "p" selector!</p>
+    </div>
+
+    <div>
+        <h3>ID CSS Selectors</h3>
+        <p id="grayParagraph">This is a normal paragraph with CSS Selector</p>
+    </div>
+
+    <div>
+        <!-- classes can be multiple -->
+        <h3>Class CSS Selector</h3>
+        <p class="brownParagraph bgColor">This is a normal paragraph with CSS Selector</p>
+    </div>
+
+    <div>
+        <h3>Grouping CSS Selector</h3>
+        <p2>This is a paragraph ofcourse!</p2>
+        <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

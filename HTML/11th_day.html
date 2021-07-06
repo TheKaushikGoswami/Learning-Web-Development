@@ -1,5 +1,13 @@
 <!-- Day 11- Basics of CSS and 3 Different Usage of CSS ina document! -->
 
+<!-- Presidency(Priority Status):
+
+    Inline CSS > External/Internal CSS
+    Between External & Internal CSS:
+        The CSS written at last of the both, in the code, will be of more presidence!
+    
+    !important will overwrite all the css values, and will take the css with it, as the priority-->
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +17,13 @@
     <title>Learning CSS</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="/CSS/11th_day.css">
+    <link rel="stylesheet" href="../CSS/11th_day.css">
 
     <!-- Internal CSS -->
     <style>
         p2{
             color: white;
-            background-color: grey;
+            background-color: grey !important; /* This !important marks this css style as the priority.*/
         }
     </style>
 </head>
