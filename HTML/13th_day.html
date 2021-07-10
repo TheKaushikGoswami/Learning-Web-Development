@@ -1,0 +1,34 @@
+<!-- Day 13 - Usage of Fonts and their styles in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-family: cursive; /* web safe fonts */
+        }
+
+        .webFont{
+            font-family: 'Open Sans';
+            font-size: 40px; /* changes the font size */
+            line-height: 5.5em; /* changes the line difference between the last font and this */
+        }
+
+        span{
+            font-weight: bold; /* self explanatory */
+            font-style: italic; /* self explanatory */
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Fonts</h3>
+    <p>This is cursive font-family paragraph of web safe fonts. </p>
+    <p class="webFont">This is a web <span> font</span> paragraph.</p>
+</body>
+</html>
