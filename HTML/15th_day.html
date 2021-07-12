@@ -1,0 +1,65 @@
+<!-- Day 15 - Borders and Background in CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders And Background</title>
+    <style>
+        #FirstPara{
+            background-color: aquamarine;
+            height: 100px;
+            width: 300px;
+            border: 4px gold solid; /* defining border-width, color, style in 1 line */
+            /*
+            border-width: 4px;            border
+            border-color: gold;           properties in
+            border-style: solid;          different lines
+            */
+            border-radius: 4px;           
+        }
+
+        #SecondPara{
+            background-color: blanchedalmond;
+            height: 100px;
+            width: 300px;
+
+            /* defining different borders for 1 paragraph differently, ik they look bad */
+            border-left: 4px solid rgb(141, 21, 240);
+            border-right: 4px solid salmon;
+            border-top: 4px solid saddlebrown;
+            border-bottom: 4px solid rgb(228, 228, 21);
+
+            /*defining different border curves for 1 paragraph differently, ik they look bad */
+            border-top-right-radius: 50px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #ThirdPara{
+            height: 100px;
+            width: 300px;
+            background-image: url('https://raw.githubusercontent.com/TheKaushikGoswami/TheKaushikGoswami/main/media/banner.png');
+            border: 2px solid red;
+            /* background-repeat: repeat-x; to make image repeat at x axis only */
+            /* background-repeat: repeat-y; to make image repeat at y axis only */
+            background-repeat: no-repeat;
+            background-position: center center; /* u can replace position with pixels or other parameters to make it that far away from x or y axis respectively */
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading!</h3>
+    <p id="FirstPara">This is the first paragraph!</p>
+
+    <h3>This is second heading!</h3>
+    <p id="SecondPara"> This is the second paragraph!</p>
+
+    <h3>This is third heading!</h3>
+    <p id="ThirdPara">This is the third paragraph!</p>
+</body>
+</html>
