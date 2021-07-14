@@ -1,0 +1,69 @@
+<!-- Day 16 - Box Models: Mergins And Padding -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models: Margins and Padding</title>
+    <style>
+        body{
+            background-color: #f1e3d1;
+        }
+
+        *{
+            box-sizing: border-box; /* determines dimensions of the box element as per the given width automatically */
+        }
+
+        .container{
+            background-color: antiquewhite;
+            border: 3px solid rgb(223, 113, 113);
+            border-radius: 10px;
+            width: 660px;
+
+            /* padding: 20px;  = padding from all sides will be same */
+
+            /* 
+            padding-left: 30px;                 padding
+            padding-right: 10px;                  of
+            padding-top: 22px;                 different
+            padding-bottom: 50px;                sides
+            */                
+
+            padding: 10px 50px 12px 40px; /*values will be inrespect of - top right bottom left; */
+            
+            /* margin: 40px;  = margin from all sides will be same */
+ 
+            /* 
+            margin-left: 30px;                    margin
+            margin-right: 10px;                     of
+            margin-top: 22px;                     different
+            margin-bottom: 50px;                   sides
+            */
+
+            margin: 23px 50px 12px 40px; /*values will be inrespect of - top right bottom left; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is the 1st heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae quod quaerat iusto eligendi recusandae veritatis reiciendis quidem! Nesciunt nihil pariatur dicta quibusdam qui, ipsam enim quam. Accusantium, tempora veritatis.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is the 2nd heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae quod quaerat iusto eligendi recusandae veritatis reiciendis quidem! Nesciunt nihil pariatur dicta quibusdam qui, ipsam enim quam. Accusantium, tempora veritatis.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3>This is the 3rd heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae quod quaerat iusto eligendi recusandae veritatis reiciendis quidem! Nesciunt nihil pariatur dicta quibusdam qui, ipsam enim quam. Accusantium, tempora veritatis.
+        </p>
+    </div>
+    
+</body>
+</html>
