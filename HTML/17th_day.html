@@ -1,0 +1,95 @@
+<!-- Day 17 - Alignment: Float & Clear -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Yomogi', cursive;
+        }
+
+        .container{
+            width: 700px;
+            border: 4px solid rgb(226, 18, 105);
+            border-radius: 14px;
+            padding: 14px;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+
+        .items{
+            border: 3px solid rgb(238, 118, 5);
+            margin: 10px 2px;
+            padding: 12px;
+            border-radius: 14px;
+            background-color: rgb(252, 252, 128);
+        }
+
+        #fruits{
+            float: left;
+            width: 45%;
+
+        }
+
+        #computer{
+            float: right;
+            width: 45%;
+        }
+
+        #stationary{
+            /* clear: left;           stops the floats from left side to overlap it */
+            clear: both;
+            float: initial;
+            width: 100%;
+        }
+
+        h3, p{
+            /* 
+            Alligning text to different locations, the later one will overwrite the above css!
+            */
+
+            /*
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: end; 
+            */
+
+            text-align: justify; /* let css adjust your text for u */
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To My Online Store!</h1>
+
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi quae perferendis fugit iusto voluptatibus nesciunt similique dolores illo eaque minima iste adipisci officia ad. Sapiente soluta sit commodi veritatis?</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi quae perferendis fugit iusto voluptatibus nesciunt similique dolores illo eaque minima iste adipisci officia ad. Sapiente soluta sit commodi veritatis?</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationaryspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eligendi quae perferendis fugit iusto voluptatibus nesciunt similique dolores illo eaque minima iste adipisci officia ad. Sapiente soluta sit commodi veritatis?</p>
+        </div>
+    </div>
+</body>
+</html>
