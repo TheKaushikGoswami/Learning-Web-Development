@@ -1,0 +1,66 @@
+<!-- Day 18 - Styling Links and Buttons -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            border-radius: 12px;
+            background-color: azure;
+            padding: 40px;
+            margin: 40px auto;
+            width: 650px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a{                                  /* Decorating Anchor Element */
+            text-decoration: none;
+            color: black;
+        }
+
+        /* :hover decides the property when the object is hovered (brought mouse upon) */
+        a:hover{
+            color: rgb(255, 255, 255);
+            background-color: rgb(64, 224, 102);
+        }
+
+        /* :visited decides the property of the object if it has been visited/clicked once */
+        a:visited{
+            background-color: brown;
+        }
+
+        /* :active changes the property of the object when it is activated */
+        a:active{
+            background-color: darkmagenta;
+        }
+
+        .btn{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color: coral;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            background-color: white;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore necessitatibus deserunt quasi amet dolores aliquam. Quo pariatur hic atque, accusantium, temporibus consequuntur repellat iste, voluptatum accusamus reprehenderit inventore quisquam earum.</p>
+        <a href="https://github.com/TheKaushikGoswami" class="btn" target="_blank">Read more</a>
+        <button class="btn"> Contact Us</button>
+    </div>
+</body>
+</html>
