@@ -42,7 +42,9 @@ A quick look at the folder structure of this project.
     │   ├───14th_day.html
     │   ├───15th_day.html
     │   ├───16th_day.html
-    │   └───17th_day.html
+    │   ├───17th_day.html
+    │   ├───18th_day.html
+    │   └───19th_day.html
     └── README.md
 
 ## 🚀 Contributing 
