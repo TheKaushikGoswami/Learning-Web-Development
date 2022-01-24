@@ -47,6 +47,12 @@ A quick look at the folder structure of this project.
     │   ├───19th_day.html
     │   ├───20th_day.html
     │   └───21st_day.html
+    ├── PROJECTS
+    │   └───Gym Website
+    │           ├───img
+    │           │   ├───background.png
+    │           │   └───logo.png
+    │           └───index.html
     └── README.md
 
 ## 🚀 Contributing 
@@ -73,6 +79,9 @@ git push YOUR_REPO_URL develop
 
 After cloning & setting up the local project you can push the changes to your github fork and make a pull request.
 
+## 🤗 Acknowledgements
+
+- [Web Development Tutorials For Beginners](https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg) - by [CodeWithHarry](https://github.com/CodeWithHarry)
 ------
 
 Made with :heart: in India
