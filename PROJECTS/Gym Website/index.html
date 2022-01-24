@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaushik Fitness Club</title>
+    <link rel="icon" href="/PROJECTS/Gym Website/img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <style>
         /* CSS Reset */
@@ -15,10 +16,17 @@
             padding: 0px;
             background: url('/PROJECTS/Gym Website/img/background.png')
         }
+        header{
+            background-color: black;
+            position: fixed;
+            width: 1520px;
+            top: 0px;
+            height: 90px;
+        }
         .left{
             position: absolute;
             left: 50px;
-            top: 18px;
+            top: 6px;
             display: inline-block;
         }
         .left img{
@@ -38,7 +46,7 @@
         .right{
             position: absolute;
             right: 40px;
-            top: 18px;
+            top: 24px;
             display: inline-block;
         }
         .navbar{
@@ -74,7 +82,7 @@
         }
         .container{
             border: 2px solid white;
-            margin: 105px 80px;
+            margin: 182px 80px;
             padding: 70px;
             width: 35%;
             border-radius: 20px;
@@ -96,6 +104,17 @@
             font-size: 20px;
             border-radius: 8px;
             font-family: 'Baloo Bhai', cursive;
+        }
+        footer{
+            text-align: center;
+            font-size: 20px;
+        }
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+        footer a:hover{
+            color: aqua;
         }
     </style>
 </head>
@@ -150,5 +169,8 @@
             <button class="btn">Submit</button>
         </form>
     </div>
+    <footer>
+        Made With ❤ by <a href="https://github.com/TheKaushikGoswami" target="_blank">TheKaushikGoswami</a>
+    </footer>
 </body>
 </html>
