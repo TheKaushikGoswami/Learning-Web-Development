@@ -1,0 +1,54 @@
+<!-- Day 23 - Visibility and Z-Index Properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: green;
+        }
+        #box2{
+            background-color: yellow;
+            display: none;   /* Removes the element from it's position and hide it */
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: red;
+            visibility: hidden; /* Changes the Visibility of the Element to Hidden (The Element will stay at it's place, will just hide) */
+        }
+
+        /* whenever HTML elements collapse with each other, then the element with smaller z-index value will be covered by the element with larger z-index value. */
+        #box5{
+            background-color: chocolate;
+            position: relative;
+            top: 40px;
+            z-index: 45;
+        }
+        /* Z-index does not work on static position value. It only works on the elements with position: relative, absolute, fixed, or sticky. */
+        #box6{
+            background-color: mediumspringgreen;
+            position: relative;
+            bottom: 20px;
+            z-index: 40;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+</body>
+</html>
