@@ -1,0 +1,67 @@
+<!-- Day 25 - Responsive Designs and Size Units -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Designs and Font Units</title>
+    <!-- What is Responsive Design?
+                                - Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions.
+                                - Responsive design is a necessity and not a luxury anymore! -->
+
+    <!-- Various Ways to Achieve Responsive Design:
+                                - Setting up the viewport
+                                - Use max-width/max-height
+                                - Using CSS Media Queries
+                                - Using rem/vh/vw units over pixels-->
+    <style>
+        html{
+            font-size: 7px;
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            /*  vh unit :- 
+                            - It stands for viewport height.
+                            - vh is equal to the 1/100 times of the viewport height.
+                            - Example: Suppose height of the browser is 1000px, so 1vh is equaled to (1/100)*1000= 10px. */
+            height: 100vh;
+
+            /*  vw unit :-
+                            - It stands for viewport width.
+                            - Similar to vh, vw is equal to the 1/100 times of the viewport width.
+                            - Example: Suppose width of the browser is 1000px, so 1vw is equaled to (1/100)*1000= 10px. */
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /*  em unit :-  
+                            - Font-sizes are inherited relative to the parent element.
+                            - 4em means four times of the parent element. */
+
+            font-size: 4em; /* Font-Size computed = 4*10px = 40px. ".container" is the parent element here. */
+            padding: 2em;   /* Padding computed = 2*40px = 80px. "font-size: 4em(40px)" is the parent here. */
+        }
+        #second{
+            /*  rem unit :-
+                            - Font-size gets set according to the font-size of the root element.
+                            - In general, <html> is the root element.
+                            - In rem, "r" stands for "root." */
+
+            font-size: 6rem; /* Font-Size computed = 6*7px = 42px. "html" is the root element. */
+            padding: 5rem;    /* Padding computed = 5*7px = 35px. "html" is the root element. */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>
