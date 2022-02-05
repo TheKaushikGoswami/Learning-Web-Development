@@ -1,0 +1,71 @@
+<!-- Day 26 - Media Queries -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 50px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        /* 
+        
+        WHAT IS MEDIA QUERY?
+
+                            - Media queries are used when we want to customize our website's presentation according to the user's screen size. With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).
+                            - A media query is a logical operation. Whenever a media query becomes true, then the related CSS is applied to the target element.
+
+        GENERAL FORMAT:-
+
+                            @media media-type and (media-feature){
+                                
+                                CSS Rules to be applied
+                            }
+        
+        */
+
+        @media (max-width: 299px){                            
+            #box-1{
+                display: block;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 599px){
+            #box-2{
+                display: block;
+                background-color: antiquewhite;
+                color: black;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 999px){
+            #box-3{
+                display: block;
+                background-color: orange;
+                color: white;
+            }
+        }
+
+        @media only screen and (min-width: 1000px){            /* only screen = gets triggered only for screen property of the media */
+            #box-4{
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">This is me on smallest width</div>
+    <div class="box" id="box-2">This is me on average width</div>
+    <div class="box" id="box-3">This is me on large width</div>
+    <div class="box" id="box-4">This is me on very large width</div>
+</body>
+</html>

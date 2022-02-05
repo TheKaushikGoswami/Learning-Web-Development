@@ -49,7 +49,8 @@ A quick look at the folder structure of this project.
     │   ├───21st_day.html
     │   ├───23rd_day.html
     │   ├───24th_day.html
-    │   └───25th_day.html
+    │   ├───25th_day.html
+    │   └───26th_day.html
     ├── PROJECTS
     │   └───Gym Website - Day 22
     │           ├───img
